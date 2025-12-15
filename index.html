@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yusuf Ak's Dev Portfolio</title>
+    <meta name="description" content="Business Informatics student passionate about computer science, seeking opportunities in the tech sector.">
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com">-->
+    <!--<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+    <!--<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">-->
+
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="7f7c2903-7560-4f45-b87e-8392a0801979"></script>
+</head>
+<body class="min-h-screen text-white overflow-x-hidden">
+
+    <!-- Animated Background Elements -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none">
+        <div class="floating-orb absolute top-20 left-10 w-96 h-96 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-full blur-3xl animate-float"></div>
+        <div class="floating-orb absolute top-96 right-20 w-80 h-80 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-full blur-3xl animate-float-delayed"></div>
+        <div class="floating-orb absolute bottom-32 left-1/3 w-64 h-64 bg-gradient-to-r from-cyan-500/8 to-blue-500/8 rounded-full blur-3xl animate-float-slow"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full glass-strong z-50 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-14">
+                <!-- Logo/Name -->
+                <div class="font-semibold text-lg text-white hover:text-zinc-300 transition-colors cursor-pointer">
+                    yusuf's dev portfolio
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center gap-1">
+                    <a href="#home" class="nav-link px-4 py-2 text-sm text-zinc-400 hover:text-white transition-all duration-300 rounded-lg hover:bg-white/5 relative">Home</a>
+                    <a href="#about" class="nav-link px-4 py-2 text-sm text-zinc-400 hover:text-white transition-all duration-300 rounded-lg hover:bg-white/5 relative">About</a>
+                    <a href="#projects" class="nav-link px-4 py-2 text-sm text-zinc-400 hover:text-white transition-all duration-300 rounded-lg hover:bg-white/5 relative">Projects</a>
+                    <a href="#contact" class="nav-link px-4 py-2 text-sm text-zinc-400 hover:text-white transition-all duration-300 rounded-lg hover:bg-white/5 relative">Contact</a>
+                    <a href="./en/index.html" class="nav-link px-4 py-2 text-sm text-zinc-400 hover:text-white transition-all duration-300 rounded-lg hover:bg-white/5 relative" data-umami-event="switch-to-english">English version</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2 hover:bg-white/5 rounded-lg transition-colors" id="mobile-menu-button">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden mobile-menu-slide" id="mobile-menu">
+            <div class="px-4 pt-2 pb-4 space-y-1 glass-strong border-t border-white/10">
+                <a href="#home" class="block px-4 py-3 text-sm text-zinc-400 hover:text-white hover:bg-white/5 rounded-lg transition-all">Home</a>
+                <a href="#about" class="block px-4 py-3 text-sm text-zinc-400 hover:text-white hover:bg-white/5 rounded-lg transition-all">About</a>
+                <a href="#projects" class="block px-4 py-3 text-sm text-zinc-400 hover:text-white hover:bg-white/5 rounded-lg transition-all">Projects</a>
+                <a href="#contact" class="block px-4 py-3 text-sm text-zinc-400 hover:text-white hover:bg-white/5 rounded-lg transition-all">Contact</a>
+                <a href="./en/index.html" class="nav-link px-4 py-2 text-sm text-zinc-400 hover:text-white transition-all duration-300 rounded-lg hover:bg-white/5 relative">English version</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-32 pb-32 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <!-- Badge -->
+            <div class="inline-flex items-center gap-2 glass px-4 py-2 rounded-full mb-8 animate-fadeInUp">
+                <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                <span class="text-sm text-zinc-300 font-medium"> derzeit verfügbar für Stellenangebote</span>
+            </div>
+
+            <!-- Animated Title -->
+            <h1 class="text-2xl sm:text-5xl lg:text-7xl font-bold mb-6 text-white hero-title tracking-tight leading-tight">
+                Ich bin Yusuf Ak,<br/> ein Wirtschafts-<br/>informatik<br/>Student
+            </h1>
+
+            <!-- Subtitle with Typewriter Effect -->
+            <p class="text-lg sm:text-xl text-zinc-400 mb-12 max-w-2xl mx-auto leading-relaxed typewriter font-light">
+                Leidenschaftlich an Informatik und Technologie interessiert. Auf der Suche nach Möglichkeiten, im Technologiesektor zu wachsen und beizutragen.
+            </p>
+
+            <!-- Animated Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center hero-buttons">
+                <a href="#projects" class="group btn-primary glass-hover px-8 py-3.5 rounded-xl text-white font-medium transition-all duration-300 transform hover:scale-[1.02] hover:shadow-xl hover:shadow-blue-500/20 inline-flex items-center justify-center gap-2" data-umami-event="view-projects button click">
+                    Meine Arbeiten ansehen
+                    <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </a>
+                <a href="#contact" class="group glass glass-hover px-8 py-3.5 rounded-xl text-zinc-300 font-medium hover:text-white transition-all duration-300 transform hover:scale-[1.02] inline-flex items-center justify-center gap-2" data-umami-event="contact-me button click">
+                    Kontaktieren Sie mich
+                    <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+<section id="about" class="py-32 px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16 text-white">Über mich</h2>
+
+        <div class="grid lg:grid-cols-2 gap-8 items-start">
+            <!-- Profile Card -->
+            <div class="glass glass-hover rounded-2xl p-8 space-y-6">
+                <div class="space-y-4">
+                    <h3 class="text-xl font-semibold text-white">Hintergrund</h3>
+                    <p class="text-base text-zinc-400 leading-relaxed">
+                        Ich bin ein Wirtschaftsinformatik-Student mit einer starken Leidenschaft für Informatik und Technologie.
+                        Derzeit suche ich nach Möglichkeiten als Werkstudent, um meine Fähigkeiten anzuwenden und weiter zu lernen.
+                    </p>
+                    <p class="text-base text-zinc-400 leading-relaxed">
+                        Meine Schwerpunkte liegen in der Webentwicklung, Softwaretechnik und der Erforschung der Schnittstelle
+                        zwischen Geschäftsprozessen und Technologielösungen.
+                    </p>
+                </div>
+
+                <!-- quick stats about me -->
+                <div class="grid grid-cols-2 gap-4 pt-6 border-t border-white/10">
+                    <div>
+                        <div class="text-2xl font-bold text-white mb-1">3+</div>
+                        <div class="text-sm text-zinc-400">Jahre Lernen</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-white mb-1">2+</div>
+                        <div class="text-sm text-zinc-400">Projekte erstellt</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- My skills card -->
+            <div class="glass glass-hover rounded-2xl p-8">
+                <h3 class="text-xl font-semibold mb-6 text-white">Skills & Technologies</h3>
+
+                <div class="space-y-6">
+                    <!-- My skills section: Programming -->
+                    <div>
+                        <div class="text-sm font-medium text-zinc-300 mb-3">Programming</div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-pill px-4 py-2 rounded-full text-sm glass text-zinc-300 hover:text-white transition-colors">HTML</span>
+                            <span class="skill-pill px-4 py-2 rounded-full text-sm glass text-zinc-300 hover:text-white transition-colors">CSS</span>
+                            <span class="skill-pill px-4 py-2 rounded-full text-sm glass text-zinc-300 hover:text-white transition-colors">JavaScript</span>
+                            <span class="skill-pill px-4 py-2 rounded-full text-sm glass text-zinc-300 hover:text-white transition-colors">Python</span>
+                            <span class="skill-pill px-4 py-2 rounded-full text-sm glass text-zinc-300 hover:text-white transition-colors">Java</span>
+                        </div>
+                    </div>
+
+                    <!-- My skills section: Tools -->
+                    <div>
+                        <div class="text-sm font-medium text-zinc-300 mb-3">Tools & Frameworks</div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-pill px-4 py-2 rounded-full text-sm glass text-zinc-300 hover:text-white transition-colors">git</span>
+                            <span class="skill-pill px-4 py-2 rounded-full text-sm glass text-zinc-300 hover:text-white transition-colors">vite</span>
+                            <span class="skill-pill px-4 py-2 rounded-full text-sm glass text-zinc-300 hover:text-white transition-colors">tailwindCSS</span>
+                        </div>
+                    </div>
+
+                    <!-- My skills section: Learning -->
+                    <div>
+                        <div class="text-sm font-medium text-zinc-300 mb-3">Derzeit am Lernen/Erkunden</div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-pill px-4 py-2 rounded-full text-sm glass text-zinc-300 hover:text-white transition-colors border-blue-500/30">TypeScript</span>
+                            <span class="skill-pill px-4 py-2 rounded-full text-sm glass text-zinc-300 hover:text-white transition-colors border-blue-500/30">Vue.js</span>
+                            <span class="skill-pill px-4 py-2 rounded-full text-sm glass text-zinc-300 hover:text-white transition-colors border-blue-500/30">React.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- My Projects -->
+    <section id="projects" class="py-32 px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16 text-white">Ausgewählte Projekte</h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project Card 1 -->
+                <div class="project-card group glass glass-hover rounded-2xl overflow-hidden transition-all duration-300 hover:scale-[1.02]">
+                    <!-- Image Container -->
+                    <div class="relative w-full aspect-video bg-gradient-to-br from-blue-500/10 to-purple-500/10 border-b border-white/10 overflow-hidden">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <svg class="w-16 h-16 text-zinc-600 group-hover:text-zinc-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <!-- Hover Overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2 text-white group-hover:text-blue-400 transition-colors">Mein modernes Entwickler-Portfolio</h3>
+                        <p class="text-sm text-zinc-400 mb-4 leading-relaxed">Eine moderne Webanwendung, die mit Webtechnologien erstellt wurde und ein modernes Design aufweist.</p>
+
+                        <!-- Tech Stack -->
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 rounded-full text-xs glass text-zinc-400">HTML</span>
+                            <span class="px-3 py-1 rounded-full text-xs glass text-zinc-400">CSS</span>
+                            <span class="px-3 py-1 rounded-full text-xs glass text-zinc-400">JavaScript</span>
+                            <span class="px-3 py-1 rounded-full text-xs glass text-zinc-400">TailwindCSS</span>
+                        </div>
+
+                        <!-- Links -->
+                        <div class="flex gap-4 text-sm">
+                            <a href="yusufak.dev" class="text-zinc-400 hover:text-white transition-colors inline-flex items-center gap-1" data-umami-event="project 1 live demo click">
+                                <span>Live Demo</span>
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                </svg>
+                            </a>
+                            <a href="yusufak.dev" class="text-zinc-400 hover:text-white transition-colors inline-flex items-center gap-1" data-umami-event="project 1 github click">
+                                <span>GitHub</span>
+                                <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card group glass glass-hover rounded-2xl overflow-hidden transition-all duration-300 hover:scale-[1.02]">
+                    <div class="relative w-full aspect-video bg-gradient-to-br from-purple-500/10 to-pink-500/10 border-b border-white/10 overflow-hidden">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <svg class="w-16 h-16 text-zinc-600 group-hover:text-zinc-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2 text-white group-hover:text-purple-400 transition-colors">Projekt 2: ???</h3>
+                        <p class="text-sm text-zinc-400 mb-4 leading-relaxed">Derzeit eine moderne Webanwendung in Entwicklung, die bald präsentiert wird.</p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 rounded-full text-xs glass text-zinc-400">HTML</span>
+                            <span class="px-3 py-1 rounded-full text-xs glass text-zinc-400">TailwindCSS</span>
+                            <span class="px-3 py-1 rounded-full text-xs glass text-zinc-400">JavaScript</span>
+                        </div>
+
+                        <div class="flex gap-4 text-sm">
+                            <a href="yusufak.dev" class="text-zinc-400 hover:text-white transition-colors inline-flex items-center gap-1" data-umami-event="project 2 live demo click">
+                                <span>Live Demo</span>
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                </svg>
+                            </a>
+                            <a href="yusufak.dev" class="text-zinc-400 hover:text-white transition-colors inline-flex items-center gap-1" data-umami-event="project 2 github click">
+                                <span>GitHub</span>
+                                <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card group glass glass-hover rounded-2xl overflow-hidden transition-all duration-300 hover:scale-[1.02]">
+                    <div class="relative w-full aspect-video bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border-b border-white/10 overflow-hidden">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <svg class="w-16 h-16 text-zinc-600 group-hover:text-zinc-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold mb-2 text-white group-hover:text-cyan-400 transition-colors">Projekt 3: ???</h3>
+                        <p class="text-sm text-zinc-400 mb-4 leading-relaxed">Eine weitere App befindet sich in der Entwicklung, die bald veröffentlicht wird! <br/></p>
+
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 rounded-full text-xs glass text-zinc-400">???</span>
+                            <span class="px-3 py-1 rounded-full text-xs glass text-zinc-400">???</span>
+                            <span class="px-3 py-1 rounded-full text-xs glass text-zinc-400">???</span>
+                        </div>
+
+                        <div class="flex gap-4 text-sm">
+                            <a href="#" class="text-zinc-400 hover:text-white transition-colors inline-flex items-center gap-1" data-umami-event="project 3 live demo click">
+                                <span>Live Demo</span>
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="text-zinc-400 hover:text-white transition-colors inline-flex items-center gap-1" data-umami-event="project 3 github click">
+                                <span>GitHub</span>
+                                <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-32 px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-6 text-white">Lass uns verbinden</h2>
+            <p class="text-center text-zinc-400 mb-12 max-w-xl mx-auto">
+                Interessiert an einer Zusammenarbeit oder hast du eine Frage? Zögere nicht, mich per E-Mail zu kontaktieren oder dich mit mir auf LinkedIn und GitHub zu verbinden.
+            </p>
+
+            <!-- Contact Card -->
+            <div class="glass glass-hover rounded-2xl p-8 sm:p-12">
+                <div class="grid sm:grid-cols-2 gap-6 mb-8">
+                    <!-- Email -->
+                    <a href="mailto:your.email@example.com" class="group flex items-start gap-4 p-4 rounded-xl glass-hover transition-all">
+                        <div class="flex-shrink-0 w-12 h-12 rounded-lg glass flex items-center justify-center group-hover:bg-blue-500/10 transition-colors">
+                            <svg class="w-5 h-5 text-zinc-400 group-hover:text-blue-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="text-sm font-medium text-white mb-1">Email</div>
+                            <div class="text-sm text-zinc-400 group-hover:text-zinc-300 transition-colors">coming soon...</div>
+                        </div>
+                    </a>
+
+                    <!-- My LinkedIn -->
+                    <a href="https://www.linkedin.com/in/yusuf-ak-795623298" target="_blank" rel="noopener noreferrer" class="group flex items-start gap-4 p-4 rounded-xl glass-hover transition-all">
+                        <div class="flex-shrink-0 w-12 h-12 rounded-lg glass flex items-center justify-center group-hover:bg-blue-500/10 transition-colors">
+                            <svg class="w-5 h-5 text-zinc-400 group-hover:text-blue-400 transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="text-sm font-medium text-white mb-1">LinkedIn</div>
+                            <div class="text-sm text-zinc-400 group-hover:text-zinc-300 transition-colors">Connect with me</div>
+                        </div>
+                    </a>
+
+                    <!-- My GitHub -->
+                    <a href="https://github.com/yusuf-ak1" target="_blank" rel="noopener noreferrer" class="group flex items-start gap-4 p-4 rounded-xl glass-hover transition-all">
+                        <div class="flex-shrink-0 w-12 h-12 rounded-lg glass flex items-center justify-center group-hover:bg-blue-500/10 transition-colors">
+                            <svg class="w-5 h-5 text-zinc-400 group-hover:text-blue-400 transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="text-sm font-medium text-white mb-1">GitHub</div>
+                            <div class="text-sm text-zinc-400 group-hover:text-zinc-300 transition-colors">Sehe meine Projekte</div>
+                        </div>
+                    </a>
+
+                    <!-- Location -->
+                    <div class="flex items-start gap-4 p-4 rounded-xl">
+                        <div class="flex-shrink-0 w-12 h-12 rounded-lg glass flex items-center justify-center">
+                            <svg class="w-5 h-5 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="text-sm font-medium text-white mb-1">Location</div>
+                            <div class="text-sm text-zinc-400">Bavaria, Germany</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- My CTA Button -->
+                <div class="text-center pt-6 border-t border-white/10">
+                    <a href="mailto:example@example.com" class="inline-flex items-center gap-2 btn-primary glass-hover px-8 py-3.5 rounded-xl text-white font-medium transition-all duration-300 transform hover:scale-[1.02]">
+                        Sende mir eine E-Mail
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative z-10 border-t border-white/10 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <!-- My Info -->
+                <div>
+                    <div class="font-semibold text-lg text-white mb-3">Yusuf Ak</div>
+                    <p class="text-sm text-zinc-400 leading-relaxed">Webentwickler mit Leidenschaft für moderne Benutzererlebnisse.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <div class="font-medium text-white mb-3">Quick Links</div>
+                    <nav class="flex flex-col gap-2">
+                        <a href="#home" class="text-sm text-zinc-400 hover:text-white transition-colors">Home</a>
+                        <a href="#about" class="text-sm text-zinc-400 hover:text-white transition-colors">About</a>
+                        <a href="#projects" class="text-sm text-zinc-400 hover:text-white transition-colors">Projects</a>
+                        <a href="#contact" class="text-sm text-zinc-400 hover:text-white transition-colors">Contact</a>
+                    </nav>
+                </div>
+
+                <!-- My Social Links -->
+                <div>
+                    <div class="font-medium text-white mb-3">Connect</div>
+                    <div class="flex gap-3">
+                        <a href="https://github.com/yusuf-ak1" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg glass glass-hover flex items-center justify-center text-zinc-400 hover:text-white transition-all hover:scale-110">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/yusuf-ak-795623298" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg glass glass-hover flex items-center justify-center text-zinc-400 hover:text-white transition-all hover:scale-110">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
+                            </svg>
+                        </a>
+                        <a href="mailto:your.email@example.com" class="w-10 h-10 rounded-lg glass glass-hover flex items-center justify-center text-zinc-400 hover:text-white transition-all hover:scale-110">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p class="text-sm text-zinc-400">© 2025 Yusuf Ak. All rights reserved.</p>
+                <div class="flex items-center gap-2 text-sm text-zinc-400">
+                    <span>Built with</span>
+                    <span class="text-red-400">♥</span>
+                    <span>using Vite & Tailwind CSS, HTML, and JavaScript.</span>
+                    <span>| </span>
+                    <a href="legal/impressum.html" style="text-decoration: underline;" data-umami-event="impressum button click">Impressum</a>
+                    <a href="legal/datenschutzerklärung.html" style="text-decoration: underline;" data-umami-event="datenschutzerklärung button click">Datenschutzerklärung</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./src/js/main.js"></script>
+    
+</body>
+</html>
